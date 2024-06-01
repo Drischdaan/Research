@@ -7,3 +7,7 @@ This is my public research repository. Here I store links, thoughts and plans fo
 - **📚 Topics:** Contains different topics I'm interested in.
 - **📝 Projects:** Contains research for my projects.
 - **🧠 Thoughts:** Contains random thoughts and ideas.
+
+## Projects
+
+- **[Flux:](./Projects/Flux/README.md)** Game Engine to explore computer graphics and graphics programming.
