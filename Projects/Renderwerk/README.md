@@ -1,4 +1,4 @@
-# 🌟 Flux <!-- omit from toc -->
+# 🌟 Renderwerk <!-- omit from toc -->
 
 Game Engine to explore computer graphics and graphics programming.
 
@@ -32,7 +32,7 @@ Game Engine to explore computer graphics and graphics programming.
 | Metal            | macOS                         |
 | WebGPU           | Browsers, (Also in Windows?)  |
 
-In the end I want Flux to have the ability to use multiple modern graphics apis, such as Vulkan and DirectX 12. When I start developing Flux I will use DirectX 12, because in the beginning Flux will only support Windows. When the core systems of the engine are ready, I will start supporting other platforms. The current plan is to support Windows and Linux. I am not planning to support macOS or mobile platforms. Web support on the other hand is something I am considering. Especially because WebGPU seems very interesting.
+In the end I want Renderwerk to have the ability to use multiple modern graphics apis, such as Vulkan and DirectX 12. When I start developing Renderwerk I will use DirectX 12, because in the beginning Renderwerk will only support Windows. When the core systems of the engine are ready, I will start supporting other platforms. The current plan is to support Windows and Linux. I am not planning to support macOS or mobile platforms. Web support on the other hand is something I am considering. Especially because WebGPU seems very interesting.
 
 ### DirectX 12
 
@@ -50,13 +50,13 @@ I used Vulkan in the past, but I never really got into it. It seems like that th
 
 ### DirectX 11
 
-I have experience with DirectX 11, but I don't want to use it for Flux. I want to use a more modern graphics api. Maybe in the future I will add support for DirectX 11, but for now I will focus on more modern apis.
+I have experience with DirectX 11, but I don't want to use it for Renderwerk. I want to use a more modern graphics api. Maybe in the future I will add support for DirectX 11, but for now I will focus on more modern apis.
 
 - [Raw DirectX 11](https://alain.xyz/blog/raw-directx11)
 
 ### OpenGL 4.5+ and OpenGL ES 3.2+
 
-The same as with DirectX 11, I have experience with OpenGL, but I don't want to use it for Flux.
+The same as with DirectX 11, I have experience with OpenGL, but I don't want to use it for Renderwerk.
 
 - [Raw OpenGL](https://alain.xyz/blog/raw-opengl)
 
@@ -68,7 +68,7 @@ I never used Metal and the fact that it is only available on macOS makes it less
 
 ### WebGPU
 
-WebGPU seems very interesting to me. I didn't really look into it yet, but I am planning to do so. I think it would be very cool to have Flux running in the browser in the future.
+WebGPU seems very interesting to me. I didn't really look into it yet, but I am planning to do so. I think it would be very cool to have Renderwerk running in the browser in the future.
 
 - [Raw WebGPU](https://alain.xyz/blog/raw-webgpu)
 
@@ -97,7 +97,7 @@ In some cases it might be easier to use the second way, for example when you wan
 
 I really like the modular structure of [Unreal Engine](https://www.unrealengine.com/), but there is no build system (that I know of) that makes it easy to have such a structure. Unreal Engine uses a custom build system for that. Modifying or extending a build system is quiete difficult. Maybe building some custom tooling around premake or cmake could be a solution. I will have to look into that. Other than that I think having a monolithic structure is fine too. I will start with a monolithic structure and see how it goes.
 
-Flux should be compiled into a dynamic library that can be linked and loaded by "applications". To extend the functionality of the engine without actually modifying the engines source code, I will implement a plugin system. The plugin system should be able to load and unload plugins at runtime. The plugins should be able to add new systems, components, resources, etc. to the engine. The graphics system will probably be a plugin too, to make it easier to switch between different graphics apis and make it possible to run the engine in a headless mode (Used for dedicated servers).
+Renderwerk should be compiled into a dynamic library that can be linked and loaded by "applications". To extend the functionality of the engine without actually modifying the engines source code, I will implement a plugin system. The plugin system should be able to load and unload plugins at runtime. The plugins should be able to add new systems, components, resources, etc. to the engine. The graphics system will probably be a plugin too, to make it easier to switch between different graphics apis and make it possible to run the engine in a headless mode (Used for dedicated servers).
 
 ### Code Style
 

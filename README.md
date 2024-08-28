@@ -10,4 +10,4 @@ This is my public research repository. Here I store links, thoughts and plans fo
 
 ## Projects
 
-- **[Flux:](./Projects/Flux/README.md)** Game Engine to explore computer graphics and graphics programming.
+- **[Renderwerk:](./Projects/Flux/README.md)** Game Engine to explore computer graphics and graphics programming.
